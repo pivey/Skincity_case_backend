@@ -50,7 +50,7 @@ app.get('/skinTypes', function (req, res) {
 });
 var startServer = function () {
     try {
-        app.listen(PORT, function () {
+        app.listen(PORT || 3005, function () {
             console.log("server started listening at http://localhost:" + PORT);
         });
     }

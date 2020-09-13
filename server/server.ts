@@ -61,7 +61,7 @@ app.get('/skinTypes', (req: Request, res: Response) => {
 
 const startServer = () => {
   try {
-    app.listen(PORT, () => {
+    app.listen(PORT || 3005, () => {
       console.log(`server started listening at http://localhost:${PORT}`);
     });
   }
